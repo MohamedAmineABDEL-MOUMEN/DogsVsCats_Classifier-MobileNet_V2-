@@ -1,4 +1,3 @@
-
 # Dog vs Cat Classification 🐶🐱
 
 A deep learning project that classifies images of dogs and cats using **MobileNetV2** pre-trained model.
@@ -7,21 +6,40 @@ A deep learning project that classifies images of dogs and cats using **MobileNe
 
 ```
 DogVsCat/
-│
-├─ DogVsCat.ipynb      # Jupyter notebook with full training and evaluation
-└─ dataset/            # Kaggle Dogs vs Cats dataset
+└─ DogVsCat.ipynb      # Jupyter notebook with full training and evaluation
 ```
 
 ## Dataset
 
 * Source: [Kaggle Dogs vs Cats](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 * Contains labeled images of dogs and cats.
+* **Note:** Dataset is not included in the repo. You can download it using the Kaggle API (instructions below).
 
-## Features
+## Using Kaggle API to Download Dataset
 
-* Uses **MobileNetV2** for transfer learning.
-* Classifies images as **dog** or **cat**.
-* Simple and efficient for experimentation.
+1. Go to your Kaggle [Account](https://www.kaggle.com/) → **API** → **Create New API Token**.
+   This will download a `kaggle.json` file containing your credentials.
+
+2. In your notebook or terminal, configure the API:
+
+```bash
+# create Kaggle folder
+!mkdir -p ~/.kaggle
+
+# copy your kaggle.json to that folder
+!cp kaggle.json ~/.kaggle/
+
+# set permissions
+!chmod 600 ~/.kaggle/kaggle.json
+```
+
+3. Download the Dogs vs Cats dataset:
+
+```bash
+!kaggle competitions download -c dogs-vs-cats
+```
+
+> ⚠️ Keep your `kaggle.json` private. Do **not** upload it to GitHub.
 
 ## How to Run
 
