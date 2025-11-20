@@ -6,7 +6,7 @@ A deep learning project that classifies images of dogs and cats using **MobileNe
 
 ```
 DogVsCat/
-└─ DogVsCat.ipynb      # Jupyter notebook with full training and evaluation
+└─ DogsVsCats_Classifier.ipynb      # Jupyter notebook with full training and evaluation
 ```
 
 ## Dataset
