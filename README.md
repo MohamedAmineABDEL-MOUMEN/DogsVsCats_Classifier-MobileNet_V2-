@@ -39,7 +39,7 @@ DogVsCat/
 !kaggle competitions download -c dogs-vs-cats
 ```
 
-> ⚠️ Keep your `kaggle.json` private. Do **not** upload it to GitHub.
+
 
 ## How to Run
 
